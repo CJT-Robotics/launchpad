@@ -48,5 +48,5 @@ With the Ubuntu installation complete, we can now begin configuring the system t
 ### Install and configure ROS Noetic
 1. TODO: ros installieren ros env einrichten, ros dep installieren
 2. TODO: bash env einrichten
-3. TODO: catkin_ws einrichten
+3. TODO: catkin_ws einrichten, terminator layout installieren
 4. TODO: repos klonen
