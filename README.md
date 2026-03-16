@@ -18,7 +18,7 @@ The system runs on ROS1 Noetic, utilizing Ubuntu 20.04 LTS (Focal Fossa) as the 
 
 ### Customizing Ubuntu
 With the Ubuntu installation complete, we can now begin configuring the system to meet our requirements. We utilize various scripts to simplify and speed up the workflow.
-1. Clone this repository or ensure Git is installed on your local system.
+1. Ensure Git is installed on your local system.
    ```bash
    sudo apt-get update -y
    sudo apt-get install git -y
@@ -27,3 +27,26 @@ With the Ubuntu installation complete, we can now begin configuring the system t
    ```bash
    git version
    ```
+   Add SSH key to GitHub account to access private repositories.
+   ```bash
+   ssh-keygen -t ed25519 -C "rrl@cjt-robotics.de" # use ~/.ssh/id_github
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_github
+   cat ~/.ssh/id_github # add the output to github
+   ssh -T git@github.com
+   ```
+3. Clone this repository
+   ```bash
+   git clone -b operator git@github:CJT-Robotics/launchpad.git
+   cd launchpad
+   ```
+4. Removing unnecessary software.
+   ```bash
+   sudo ./cleanup.sh
+   ```
+5. TODO: Treiber installieren, Software installieren (code, linssid, guvcview, obs, usw.)
+### Install and configure ROS Noetic
+1. TODO: ros installieren ros env einrichten, ros dep installieren
+2. TODO: bash env einrichten
+3. TODO: catkin_ws einrichten
+4. TODO: repos klonen
