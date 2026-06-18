@@ -1,2 +1,50 @@
 # launchpad
 This repository contains all the source files, directory structures and the installation and setup scripts required for the full deployment of the project.
+
+
+## Install Ubunut 20.04 local fossa
+
+## Connect with monitor, keyboard & mouse
+
+```bash
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+sudo ufw allow ssh
+```
+
+## Adding ssh-key:
+On operator-laptop:
+```bash
+ssh-keygen -t ed25519 -C "operator-laptop"
+ssh-copy-id username@ip-adress
+```
+
+## Now everything set up. Everything else over ssh
+
+```bash
+ssh username@ip-adress
+```
+
+### removing pw from some commands
+```bash
+sudo visudo
+```
+add after last line
+```
+robot ALL=(ALL) NOPASSWD: /usr/bin/apt *, /usr/sbin/reboot, /bin/chmod +x *
+```
+
+### Install ROS Noetic
+```bash
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install curl -y
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-noetic-ros-base -y
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
+sudo apt install python3-rosdep -y
+sudo rosdep init
+rosdep update
+```
