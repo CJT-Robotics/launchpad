@@ -81,6 +81,12 @@ sudo apt-get install python3-catkin-tools -y
 
 [catkin_ws manual](https://github.com/CJT-Robotics/catkin_ws.git)
 
+### Installing ROS PKGs
+```bash
+sudo apt install ros-noetic-cv-bridge -y
+
+```
+
 ### Setting up ultralytics on GPU
 ```bash
 pip install ultralytics
