@@ -48,6 +48,32 @@ sudo apt install python3-rosdep -y
 sudo rosdep init
 rosdep update
 ```
+
+### Setting up bashrc
+```bash
+nano ~/.bashrc
+```
+
+add after last line
+```
+export DISABLE_ROS1_EOL_WARNINGS=1
+export ROS_NAMESPACE='cjt'
+export ROS_IP=192.168.0.91
+export ROS_HOSTNAME=192.168.0.91
+export ROS_MASTER_URI='http://192.168.0.91:11311'
+
+alias conf='nano ~/.bashrc'
+alias srcconf='source ~/.bashrc'
+alias hi='history'
+
+alias ca='cd ~/catkin_ws'
+alias cv='cd ~/catkin_ws/src/cv_bundle'
+
+alias srcdevel='source devel/setup.bash'
+
+alias depinstall='. install/setup.bash'
+```
+
 ### Creating GithubKey
 ```bash
 ssh-keygen -t ed25519 -C "rrl@cjt-robotics.de" #save as id_github
