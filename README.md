@@ -74,15 +74,15 @@ sudo ubuntu-drivers install
 sudo reboot
 ```
 
-### Setting up ultralytics on GPU
-```bash
-pip install ultralytics
-python3 -c "import torch; print('CUDA available:', torch.cuda.is_available()); print('Device:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
-```
-
 ### Setting up catkin_ws
 ```bash
 sudo apt-get install python3-catkin-tools -y
 ```
 
 [catkin_ws manual](https://github.com/CJT-Robotics/catkin_ws.git)
+
+### Setting up ultralytics on GPU
+```bash
+pip install ultralytics
+python3 -c "import torch; print('CUDA available:', torch.cuda.is_available()); print('Device:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+```
