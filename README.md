@@ -116,6 +116,7 @@ sudo apt install python3-serial -y
 pip3 install pyserial
 sudo apt install ffmpeg libavcodec-extra -y
 sudo apt install ros-noetic-nodelet -y
+sudo apt install can-utils -y
 ```
 
 ### Setting up ultralytics on GPU
