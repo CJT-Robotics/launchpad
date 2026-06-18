@@ -81,6 +81,8 @@ cat ~/.ssh/id_github.pub #add this key to github
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_github
 ssh -T git@github.com
+git config --global user.email "rrl@cjt-robotics.de"
+git config --global user.name "CJT-Robotics Robot"
 ```
 ```bash
 nano ~/.ssh/config
