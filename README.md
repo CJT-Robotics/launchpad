@@ -84,7 +84,10 @@ sudo apt-get install python3-catkin-tools -y
 ### Installing ROS PKGs
 ```bash
 sudo apt install ros-noetic-cv-bridge -y
-
+sudo apt install python3-serial -y
+pip3 install pyserial
+sudo apt install ffmpeg libavcodec-extra -y
+sudo apt install ros-noetic-nodelet -y
 ```
 
 ### Setting up ultralytics on GPU
