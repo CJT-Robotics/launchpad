@@ -83,6 +83,6 @@ python3 -c "import torch; print('CUDA available:', torch.cuda.is_available()); p
 ### Setting up catkin_ws
 ```bash
 sudo apt-get install python3-catkin-tools -y
-´´´
+```
 
 [catkin_ws manual](https://github.com/CJT-Robotics/catkin_ws.git)
