@@ -48,3 +48,21 @@ sudo apt install python3-rosdep -y
 sudo rosdep init
 rosdep update
 ```
+### Creating GithubKey
+```bash
+ssh-keygen -t ed25519 -C "rrl@cjt-robotics.de" #save as id_github
+cat ~/.ssh/id_github.pub #add this key to github
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_github
+ssh -T git@github.com
+```
+```bash
+nano ~/.ssh/config
+```
+add the following:
+```
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_github
+```
