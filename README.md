@@ -118,6 +118,7 @@ sudo apt install ffmpeg libavcodec-extra -y
 sudo apt install ros-noetic-nodelet -y
 sudo apt install can-utils -y
 sudo apt-get install ros-noetic-robot-state-publisher -y
+sudo apt-get install ros-noetic-xacro -y
 ```
 
 ### Setting up ultralytics on GPU
