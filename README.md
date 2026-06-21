@@ -97,6 +97,7 @@ Host github.com
 
 ### some basic stuff
 ```bash
+sudo usermod -aG video robot
 sudo apt install python3-pip -y
 sudo ubuntu-drivers install
 sudo reboot
