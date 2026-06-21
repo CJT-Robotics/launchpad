@@ -130,6 +130,7 @@ sudo apt-get install ros-noetic-usb-cam -y
 sudo apt-get install ros-noetic-image-view -y
 sudo apt install ros-noetic-joy -y
 sudo apt-get install ros-noetic-pcl-ros -y
+sudo apt-get install ros-noetic-pcl-ros ros-noetic-eigen-conversion -y
 ```
 
 ### Setting up ultralytics on GPU
