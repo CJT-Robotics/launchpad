@@ -99,6 +99,7 @@ Host github.com
 ```bash
 sudo usermod -aG video robot
 sudo apt install iperf3
+sudo apt install iftop
 sudo apt install python3-pip -y
 sudo ubuntu-drivers install
 sudo reboot
