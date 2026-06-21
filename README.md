@@ -121,6 +121,7 @@ sudo apt-get install ros-noetic-robot-state-publisher -y
 sudo apt-get install ros-noetic-xacro -y
 sudo apt-get install ros-noetic-joint-state-publisher -y
 sudo apt install libusb-1.0-0-dev -y
+sudo apt-get install ros-noetic-compressed-image-transport -y
 ```
 
 ### Setting up ultralytics on GPU
