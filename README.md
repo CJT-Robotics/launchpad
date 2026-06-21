@@ -120,6 +120,7 @@ sudo apt install can-utils -y
 sudo apt-get install ros-noetic-robot-state-publisher -y
 sudo apt-get install ros-noetic-xacro -y
 sudo apt-get install ros-noetic-joint-state-publisher -y
+sudo apt install libusb-1.0-0-dev -y
 ```
 
 ### Setting up ultralytics on GPU
