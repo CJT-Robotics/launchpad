@@ -127,6 +127,7 @@ sudo apt install libusb-1.0-0-dev -y
 sudo apt-get install ros-noetic-compressed-image-transport -y
 sudo apt install ros-noetic-audio-common -y
 sudo apt-get install ros-noetic-usb-cam -y
+sudo apt-get install ros-noetic-image-view -y
 ```
 
 ### Setting up ultralytics on GPU
