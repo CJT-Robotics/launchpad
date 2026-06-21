@@ -128,6 +128,8 @@ sudo apt-get install ros-noetic-compressed-image-transport -y
 sudo apt install ros-noetic-audio-common -y
 sudo apt-get install ros-noetic-usb-cam -y
 sudo apt-get install ros-noetic-image-view -y
+sudo apt install ros-noetic-joy -y
+sudo apt-get install ros-noetic-pcl-ros -y
 ```
 
 ### Setting up ultralytics on GPU
