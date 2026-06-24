@@ -32,7 +32,7 @@ sudo visudo
 ```
 add after last line
 ```
-robot ALL=(ALL) NOPASSWD: /usr/bin/apt *, /usr/sbin/reboot, /bin/chmod +x *
+robot ALL=(ALL) NOPASSWD: /usr/bin/apt *, /usr/sbin/reboot, /bin/chmod +x *, /home/robot/catkin_ws/src/robotworkshop/studierbot/interface/can/can_up.sh
 ```
 
 ### Install ROS Noetic
