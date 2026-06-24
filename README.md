@@ -132,6 +132,7 @@ sudo apt install ros-noetic-joy -y
 sudo apt-get install ros-noetic-pcl-ros -y
 sudo apt-get install ros-noetic-pcl-ros ros-noetic-eigen-conversion -y
 sudo apt install ros-noetic-robot-localization -y
+sudo apt install ros-noetic-rosserial-server -y
 ```
 
 ### Setting up ultralytics on GPU
